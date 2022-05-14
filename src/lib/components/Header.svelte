@@ -1,19 +1,19 @@
 <script>
-  import { supabase } from '../../supabase'
-  import { user } from '../stores/store'
-  import { goto } from '$app/navigation'
+  import { supabase } from "../../supabase";
+  import { user } from "../stores/store";
+  import { goto } from "$app/navigation";
 
-  user.set(supabase.auth.user())
+  user.set(supabase.auth.user());
 
   supabase.auth.onAuthStateChange((_, session) => {
-    user.set(session?.user)
-  })
+    user.set(session?.user);
+  });
 
   const logout = () => {
-    console.log('Successfully Logged Out')
-    supabase.auth.signOut()
-    goto('/Login')
-  }
+    console.log("Successfully Logged Out");
+    supabase.auth.signOut();
+    goto("/Login");
+  };
 </script>
 
 <nav class="px-4 py-2.5 bg-gray-800">
