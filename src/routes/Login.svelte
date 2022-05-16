@@ -1,5 +1,5 @@
 <script>
-  import { supabase } from '../supabase'
+  import { supabase } from '../lib/supabase'
   import { goto } from '$app/navigation'
 
   let loading = false

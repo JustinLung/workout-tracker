@@ -1,7 +1,7 @@
 <script>
   import { readable } from 'svelte/store'
 
-  import { supabase } from '../supabase'
+  import { supabase } from '../lib/supabase'
 
   let loading = false
   let email, password, confirmPassword
