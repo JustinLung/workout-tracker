@@ -1,12 +1,12 @@
 <script>
-  import { supabase } from "../supabase";
+  import { supabase } from '../supabase'
 
   async function getWorkouts() {
     try {
-      const { data, error } = await supabase.from("workouts").select("*");
-      return data;
+      const { data, error } = await supabase.from('workouts').select('*')
+      return data
     } catch (error) {
-      console.error(error);
+      console.error(error)
     }
   }
 </script>
@@ -15,7 +15,7 @@
   <h2 class="text-3xl text-center pt-10 font-bold">
     Welcome to FitnessTracker
   </h2>
-  <div class="grid grid-cols-1 lg:grid-cols-4 mx-auto gap-6 max-w-screen-xl">
+  <div class="grid grid-cols-1 lg:grid-cols-4 mx-auto max-w-screen-xl">
     {#await getWorkouts()}
       <div class="preloader">
         <div class="bar bar1" />
@@ -41,6 +41,7 @@
               >View Workout</a
             >
           </div>
+          <p class="px-6 pb-2">Posted At: <time>{workout.created_at}</time></p>
         </div>
       {/each}
     {:catch error}

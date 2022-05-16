@@ -4,7 +4,7 @@
 
   let loading = false
   let email, password
-  let message = { sucess: null, display: '' }
+  let message = { success: null, display: '' }
   const user = supabase.auth.user()
   export const session = supabase.auth.session()
 
