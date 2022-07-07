@@ -3,7 +3,10 @@
 
   async function getWorkouts() {
     try {
-      const { data, error } = await supabase.from('workouts').select('*')
+      const { data, error } = await supabase
+        .from('workouts')
+        .select('*')
+        .order('id', { ascending: false })
       return data
     } catch (error) {
       console.error(error)
@@ -15,7 +18,7 @@
   class="flex flex-col justify-center align-center text-center px-4 py-20 h-80 bg-gray-200"
 >
   <h2 class="text-3xl pt-10 font-bold">Hi 👋, Try Some Workouts Today</h2>
-  <p class="text-lg">Let's get these gains out before summer!</p>
+  <p class="text-lg">🏋️‍♀️ Let's get these gains out before summer!</p>
 </section>
 
 <div class="m-4 relative">

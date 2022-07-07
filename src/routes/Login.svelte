@@ -65,5 +65,8 @@
         >Sign Up</a
       >
     </p>
+    <p class="pt-2 text-center">
+      <a href="/ForgotPassword" class="text-blue-900">Forgot Password?</a>
+    </p>
   </form>
 </div>

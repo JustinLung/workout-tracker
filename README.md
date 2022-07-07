@@ -1,18 +1,29 @@
-# create-svelte
+# 🖱️ MijnHVA
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+![Mockup MijnHvA](https://github.com/JustinLung/performance-matters-companion-app/blob/main/docs/mockup.png?raw=true)
 
-## Creating a project
+## 📚 Inhoudsopgave
 
-If you're seeing this, you've probably already done this step. Congrats!
+- [Beschrijving](#beschrijving)
+- [Kenmerken](#kenmerken)
+- [Installatie](#installatie)
+- [Gebruik](#gebruik)
+- [Bronnen](#bronnen)
+- [Licentie](#licentie)
 
-```bash
-# create a new project in the current directory
-npm init svelte
+## 📃 Beschrijving
 
-# create a new project in my-app
-npm init svelte my-app
-```
+Dit is de repo voor de MijnHvA SSR & PWA. Hierbij wordt de content gerenderd op de server en kan de website gedownload worden als een Progressive Web App!
+
+## 🔮 Kenmerken
+
+- 📙 HTML
+- 📘 CSS
+- 🚀 JavaScript
+- ✅ Supabase
+- 🍊 Sveltekit
+
+## ⚡ Installatie & Gebruik
 
 ## Developing
 
@@ -33,6 +44,15 @@ To create a production version of your app:
 npm run build
 ```
 
-You can preview the production build with `npm run preview`.
+## Bronnen
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+- [👫 Team 1: MijnHvA Project](https://github.com/boudewijnbout/mijnhvastudent-companion-startpage-autonomous)
+- [👬 Team 2: MijnHvA Project](https://github.com/DaanKorver/keep-users-in-control-mijnhvastudent-companion)
+- [🎨 Styleguide](https://www.figma.com/file/xKeoqRHU91N7f1n43TCtV5/MijnHvA_design_Course_FrontEndDD?node-id=0%3A1)
+- [📚 MijnHvA REST API](https://github.com/fdnd-apis/mijnhva)
+
+## Licentie
+
+![GNU GPL V3](https://www.gnu.org/graphics/gplv3-127x51.png)
+
+This work is licensed under [GNU GPLv3](./LICENSE).

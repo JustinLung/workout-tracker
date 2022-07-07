@@ -22,7 +22,7 @@
       <h1
         class="self-center text-xl font-semibold whitespace-nowrap text-white"
       >
-        FitnessTracker
+        FitnessTrekker
       </h1>
     </a>
     <ul class="flex text-white">
